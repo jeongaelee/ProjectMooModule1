@@ -60,3 +60,10 @@ Azure OpenAI의 On Your Data는 OpenAI 모델의 파워를 활용할 수 있으�
 14. "Please summarize the role of vice president of operation in 3 bullets."이라는 프롬프트를 입력합니다. role_library.pdf 파일의 내용에서 응답을 주는 것을 확인할 수 있습니다.
 
     <img src="images/onyourdata14.png" width="700"/>
+
+
+## 실습 순서
+
+* [Azure OpenAI Assistants Function Calling, File Search 사용해보기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
+* [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
+* [Azure OpenAI On Your Data - Embeddings and Search](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-EmbeddingsAndSearch.md)
