@@ -137,3 +137,9 @@ Embedding은 머신 러닝 학습 모델 및 알고리즘에서 쉽게 활용할
     결과에 4월과 8월에 관한 표가 응답되고, 아래의 Citation에 Wiki 문서의 관련 내용이 reference로 나와있는 것을 확인합니다.
 
     <img src="images/embeddings23.png" width="800"/>
+
+## 실습 순서
+
+* [Azure OpenAI Assistants Function Calling, File Search 사용해보기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
+* [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
+* [Azure OpenAI On Your Data - Embeddings and Search](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-EmbeddingsAndSearch.md)
