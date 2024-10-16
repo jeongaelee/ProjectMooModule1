@@ -20,7 +20,7 @@ Azure OpenAI Assistants는 Code Interpreter, Function Calling등의 도구를 �
 
     <img src="images/step03.png" width="700"/>
 
-4. 아래와 같이 "azure openai"로 검색하여 Azure OpenAI 리소스를 생성합니다.
+4. 아래와 같이 "azure openai"로 검색하여 Azure OpenAI 리소스를 생성합니다. (이전 단계에서 생성하였으면 Skip 하세요.)
 
     <img src="images/step04.png" width="300"/>
 
@@ -112,4 +112,8 @@ assistants_file_search.ipynb 노트북은 [Azure OpenAI Assistants (preview)의 
 
 ## 실습 순서
 
-* [실습 1. Azure OpenAI Assistants](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
+* [Global Batch API](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Batch.md)
+* [Azure OpenAI Assistants Function Calling, File Search 사용해보기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
+* [RAG를 사용한 Python 채팅 샘플 애플리케이션](https://github.com/jeongaelee/ProjectMooModule1/blob/main/RAG.md)
+* [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
+* [Azure OpenAI On Your Data - Embeddings and Search](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-EmbeddingsAndSearch.md)
