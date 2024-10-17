@@ -20,12 +20,12 @@ Embedding은 머신 러닝 학습 모델 및 알고리즘에서 쉽게 활용할
     <img src="images/embeddings03.png" width="500"/>
 
 ### Azure OpenAI의 text embedding 모델을 활용하여 Wiki 데이터 Embedding
-4. "Embeddings" 폴더 아래의 "embedding_billsum.ipynb" 파이썬 노트북을 열어 Wiki 데이터의 embedding을 진행합니다.
+4. "Embeddings" 폴더 아래의 "embedding_wiki.ipynb" 파이썬 노트북을 열어 Wiki 데이터의 embedding을 진행합니다.
 
     <img src="images/embeddings04.png" width="300"/>
 
 ### Azure Storage에 embedding된 콘텐츠가 포함 된 파일 업로드
-5. embedding_billsum.ipynb을 성공적으로 실행하였다면, "Embeddings/data" 폴더 안에 "wiki_data_embeddings.csv" 파일이 생성되었을 것입니다. 이 파일은 wiki 데이터를 Azure OpenAI의 text embedding 모델을 통하여 벡터로 변환한 "content_vector" 열이 추가되었습니다. 이 파일을 Azure Blob Storage에 업로드 하기 위하여 Azure Portal을 열어 이전 과정에서 생성한 Storage Account로 이동합니다.
+5. embedding_wiki.ipynb을 성공적으로 실행하였다면, "Embeddings/data" 폴더 안에 "wiki_data_embeddings.csv" 파일이 생성되었을 것입니다. 이 파일은 wiki 데이터를 Azure OpenAI의 text embedding 모델을 통하여 벡터로 변환한 "content_vector" 열이 추가되었습니다. 이 파일을 Azure Blob Storage에 업로드 하기 위하여 Azure Portal을 열어 이전 과정에서 생성한 Storage Account로 이동합니다.
 
     Storage Account의 "Data storage" 메뉴 아래의 "Containers"를 선택하고 "+ Container"를 클릭하여 "wikidatasource-01"이라는 새로운 Container를 생성합니다.
 
