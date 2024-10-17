@@ -10,6 +10,18 @@
 * Visual Studio Code 설치: https://code.visualstudio.com/
 * Docker Install: https://docs.docker.com/desktop/install/windows-install/
 * Python 3.8 or later version 설치
+* 아래 모듈을 Terminal에서 Install 해주세요.
+
+    ```
+    pip uninstall python-dotenv
+    pip install python-dotenv
+    ```
+
+    ```
+    pip install num2words
+    pip install pandas
+    pip install tiktoken
+    ```
 
 ## 사용 Azure 리소스 및 환경
 
@@ -22,8 +34,8 @@
 ## 실습 순서
 
 * [Global Batch API](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Batch.md)
-* [Azure OpenAI Assistants Function Calling, File Search 사용해보기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
 * [RAG를 사용한 Python 채팅 샘플 애플리케이션](https://github.com/jeongaelee/ProjectMooModule1/blob/main/RAG.md)
+* [Azure OpenAI Assistants Function Calling, File Search 사용해보기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
 * [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
 * [Azure OpenAI On Your Data - Embeddings and Search](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-EmbeddingsAndSearch.md)
 
