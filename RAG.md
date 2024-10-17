@@ -80,6 +80,11 @@
     <img src="images/rag5-02.png" width="400"/>
 
 ### Step 6: 채팅 앱을 Azure에 배포하기
+*(2024/10/17 기준, East US2에 Azure AI Search 배포에 에러가 발생합니다. 실행 전 아래 명령어로 "free" SKU를 생성하도록 변경해주세요.)
+
+    ```
+    azd env set AZURE_SEARCH_SERVICE_SKU free
+    ```
 
 1. 다음 Azure Cli 명령어를 터미널에서 실행하여 Azure 리소스를 프로비저닝하고 소스 코드를 배포합니다.
     ```
