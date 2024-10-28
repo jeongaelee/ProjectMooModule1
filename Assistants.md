@@ -73,9 +73,26 @@ Azure OpenAI Assistants는 Code Interpreter, Function Calling등의 도구를 �
 
 본 실습에서는 "/Assistants/function_calling/assistants_function_calling_with_bing_search.ipynb" 코드를 이해하고 실행해 봅니다.
 
-assistants_function_calling_with_bing_search.ipynb 노트북은 [Bing Search APIs](https://www.microsoft.com/bing/apis/llm) and [function calling](https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling?tabs=python)와 [function calling](https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling?tabs=python)을 이용하여 Azure OpenAI 모델을 웹 데이터로부터 그라운드 하는 방법을 보여줍니다. 이 방법은 모델이 웹에서 검색하는 최신 데이터에 접근하는 좋은 방안입니다.
+assistants_function_calling_with_bing_search.ipynb 노트북은 [Bing Search APIs](https://www.microsoft.com/bing/apis/llm) 와 [function calling](https://learn.microsoft.com/azure/ai-services/openai/how-to/function-calling?tabs=python)을 이용하여 Azure OpenAI 모델을 웹 데이터로부터 그라운드 하는 방법을 보여줍니다. 이 방법은 모델이 웹에서 검색하는 최신 데이터에 접근하는 좋은 방안입니다.
 
 이 샘플은 Function Calling 기능과 서치 기반의 그라운딩을 배우려고 하는 개발자들과 데이터 과학자들에게 유용할 것 입니다.
+
+Azure OpenAI의 Key와 Endpoint는 "Keys and Endpoint" 메뉴에서 복사하여 ".env" 파일의 아래에 붙여넣습니다.
+
+    <img src="images/aoai_key.png" width="700"/>
+
+    ```
+    AZURE_OAI_ENDPOINT="<YOUR_AZURE_OPENAI_ENDPOINT"
+    AZURE_OAI_KEY="<YOUR_AZURE_OPENAI_KEY>"
+    ```
+
+BING_SEARCH의 Key는 "Keys and Endpoint" 메뉴에서 복사하여 ".env" 파일의 아래에 붙여넣습니다. (BING_SEARCH_URL은 변경하지 않습니다.)
+
+    <img src="images/bing_key.png" width="700"/>
+
+    ```
+    BING_SEARCH_SUBSCRIPTION_KEY="<YOUR_BING_SEARCH_SUBSCRIPTION_KEY>"
+    ```
 
 2. 학습 목표
 
