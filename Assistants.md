@@ -79,7 +79,7 @@ assistants_function_calling_with_bing_search.ipynb 노트북은 [Bing Search API
 
 Azure OpenAI의 Key와 Endpoint는 "Keys and Endpoint" 메뉴에서 복사하여 ".env" 파일의 아래에 붙여넣습니다.
 
-    <img src="images/aoai_key.png" width="700"/>
+<img src="images/aoai_key.png" width="700"/>
 
     ```
     AZURE_OAI_ENDPOINT="<YOUR_AZURE_OPENAI_ENDPOINT"
@@ -88,7 +88,7 @@ Azure OpenAI의 Key와 Endpoint는 "Keys and Endpoint" 메뉴에서 복사하여
 
 BING_SEARCH의 Key는 "Keys and Endpoint" 메뉴에서 복사하여 ".env" 파일의 아래에 붙여넣습니다. (BING_SEARCH_URL은 변경하지 않습니다.)
 
-    <img src="images/bing_key.png" width="700"/>
+<img src="images/bing_key.png" width="700"/>
 
     ```
     BING_SEARCH_SUBSCRIPTION_KEY="<YOUR_BING_SEARCH_SUBSCRIPTION_KEY>"
