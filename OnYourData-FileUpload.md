@@ -43,7 +43,7 @@ Azure OpenAI의 On Your Data는 OpenAI 모델의 파워를 활용할 수 있으�
 
     <img src="images/onyourdata08.png" width="600"/>
 
-3. 업로드할 파일을 Drag and drop 한 후 "Upload files"를 클릭합니다. 본 실습에서는 "role_library.pdf" 파일을 업로드 해보도록 하겠습니다.
+3. 업로드할 파일을 Drag and drop 한 후 "Upload files"를 클릭합니다. 본 실습에서는 [role_library.pdf](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData/role_library.pdf) 파일을 업로드 해보도록 하겠습니다.
 
     <img src="images/onyourdata09.png" width="600"/>
 
