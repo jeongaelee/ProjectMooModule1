@@ -25,39 +25,35 @@ Azure OpenAI의 On Your Data는 OpenAI 모델의 파워를 활용할 수 있으�
 
     <img src="images/onyourdata05.png" width="600"/>
 
-6. Azure OpenAI Studio의 Home 화면으로 이동하여 "Bring your own data"를 선택합니다.
-
-    <img src="images/onyourdata06.png" width="700"/>
-
-7. Azure AI Foundry를 열어 Chat Playground를 선택합니다. "Add your data" 탭에서, "+Add a data source"를 클릭합니다.
+6. Azure AI Foundry를 열어 Chat Playground를 선택합니다. "Add your data" 탭에서, "+Add a data source"를 클릭합니다.
 
     <img src="images/embeddings18-1.png" width="600"/>
 
-8. 이번 실습에서는 직접 파일을 업로드하여 업로드한 파일의 콘텐츠에서 채팅 응답이 생성되는지 확인해 보도록 하겠습니다. 데이터 소스를 "Upload files (preview)"를 선택하고, 위의 단계에서 생성한 Azure Blob Storage와 Azure AI Search 리소스를 선택합니다. Azure 구독의 storage account에 Azure OpenAI가 액세스 하기 위해서는 권한 부여가 필요하고, 이를 위해서 Cross-origin resource sharing (CORS)을 켜야합니다. 이 데이터 소스를 참조하는데 사용할 인덱스 이름을 입력합니다. 데이터 수집이 완료된 후 제공된 이름의 새 AI Search Index가 생성됩니다.
+7. 이번 실습에서는 직접 파일을 업로드하여 업로드한 파일의 콘텐츠에서 채팅 응답이 생성되는지 확인해 보도록 하겠습니다. 데이터 소스를 "Upload files (preview)"를 선택하고, 위의 단계에서 생성한 Azure Blob Storage와 Azure AI Search 리소스를 선택합니다. Azure 구독의 storage account에 Azure OpenAI가 액세스 하기 위해서는 권한 부여가 필요하고, 이를 위해서 Cross-origin resource sharing (CORS)을 켜야합니다. 이 데이터 소스를 참조하는데 사용할 인덱스 이름을 입력합니다. 데이터 수집이 완료된 후 제공된 이름의 새 AI Search Index가 생성됩니다.
 
     <img src="images/onyourdata08.png" width="600"/>
 
-9. 업로드할 파일을 Drag and drop 한 후 "Upload files"를 클릭합니다. 본 실습에서는 "role_library.pdf" 파일을 업로드 해보도록 하겠습니다.
+8. 업로드할 파일을 Drag and drop 한 후 "Upload files"를 클릭합니다. 본 실습에서는 "role_library.pdf" 파일을 업로드 해보도록 하겠습니다.
 
     <img src="images/onyourdata09.png" width="600"/>
 
-10. Search type을 "Semantic"으로 선택하고 디폴트 청킹 사이즈를 선택합니다.
+9. Search type을 "Semantic"으로 선택하고 디폴트 청킹 사이즈를 선택합니다.
 
     <img src="images/onyourdata10.png" width="600"/>
 
-11. Data connection을 위한 Azure 리소스의 인증 타입을 "API Key"로 선택합니다.
+10. Data connection을 위한 Azure 리소스의 인증 타입을 "API Key"로 선택합니다.
 
     <img src="images/onyourdata11.png" width="600"/>
 
-12. 설정을 리뷰한 후 "Save and close"를 클릭합니다.
+11. 설정을 리뷰한 후 "Save and close"를 클릭합니다.
 
     <img src="images/onyourdata12.png" width="600"/>
 
-13. Chat playground에서 "Ingestion in progress"가 표시되는 것을 보실 수 있습니다. 데이터 소스 (File Upload)에서 Azure AI Search로 indexing 되고 있는 과정입니다.
+12. Chat playground에서 "Ingestion in progress"가 표시되는 것을 보실 수 있습니다. 데이터 소스 (File Upload)에서 Azure AI Search로 indexing 되고 있는 과정입니다.
 
     <img src="images/onyourdata13.png" width="400"/>
 
-14. "Please summarize the role of vice president of operation in 3 bullets."이라는 프롬프트를 입력합니다. role_library.pdf 파일의 내용에서 응답을 주는 것을 확인할 수 있습니다.
+13. "Please summarize the role of vice president of operation in 3 bullets."이라는 프롬프트를 입력합니다. role_library.pdf 파일의 내용에서 응답을 주는 것을 확인할 수 있습니다.
 
     <img src="images/onyourdata14.png" width="700"/>
 
