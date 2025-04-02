@@ -29,9 +29,9 @@ Azure OpenAI의 On Your Data는 OpenAI 모델의 파워를 활용할 수 있으�
 
     <img src="images/onyourdata06.png" width="700"/>
 
-7. Chat playground에서 "Add your data" 탭을 선택한 후, "+ Add a data source"를 클릭합니다.
+7. Azure AI Foundry를 열어 Chat Playground를 선택합니다. "Add your data" 탭에서, "+Add a data source"를 클릭합니다.
 
-    <img src="images/onyourdata07.png" width="400"/>
+    <img src="images/embeddings18-1.png" width="600"/>
 
 8. 이번 실습에서는 직접 파일을 업로드하여 업로드한 파일의 콘텐츠에서 채팅 응답이 생성되는지 확인해 보도록 하겠습니다. 데이터 소스를 "Upload files (preview)"를 선택하고, 위의 단계에서 생성한 Azure Blob Storage와 Azure AI Search 리소스를 선택합니다. Azure 구독의 storage account에 Azure OpenAI가 액세스 하기 위해서는 권한 부여가 필요하고, 이를 위해서 Cross-origin resource sharing (CORS)을 켜야합니다. 이 데이터 소스를 참조하는데 사용할 인덱스 이름을 입력합니다. 데이터 수집이 완료된 후 제공된 이름의 새 AI Search Index가 생성됩니다.
 
