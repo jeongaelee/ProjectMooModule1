@@ -6,7 +6,7 @@ Azure OpenAI의 Batch API는 대규모 및 대용량 처리 작업을 효율적�
 
 ### Azure OpenAI에서 Global Batch Job 실행
 
-1. 먼저, Deployments 메뉴에서 새로운 Model Deployment를 실행합니다. "+Deploy model"을 클릭하고 "Deploy base model"을 선택합니다.
+1. Azure AI Foundry Portal의 Deployments 메뉴에서 새로운 Model Deployment를 실행합니다. "+Deploy model"을 클릭하고 "Deploy base model"을 선택합니다.
 
     <img src="images/batch01.png" width="300"/>
 
