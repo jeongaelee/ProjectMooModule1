@@ -48,6 +48,12 @@ Azure OpenAI Assistants는 Code Interpreter, Function Calling등의 도구를 �
 
 본 실습에서는 "/Assistants/function_calling/assistants_file_search.ipynb" 코드를 이해하고 실행해 봅니다.
 
+먼저, 아래의 명령어로 Git Repository의 코드를 다운로드 합니다.
+
+```
+git clone https://github.com/jeongaelee/projectmoo1code.git
+```
+
 assistants_file_search.ipynb 노트북은 [Azure OpenAI Assistants (preview)의 File Search 툴](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/file-search?tabs=python)을 이용하여 Azure OpenAI 모델 외부의 지식 (제품 정보, 사용자 제공 문서등)으로 Assistant를 보강하는 방법을 보여줍니다. OpenAI는 문서를 자동으로 구문 분석 및 청킹하고, 임베딩을 생성 및 저장하고, 벡터 및 키워드 검색을 모두 사용하여 관련 콘텐츠를 검색하여 사용자 쿼리에 답변합니다.
 
 2. 학습 목표
@@ -56,7 +62,7 @@ assistants_file_search.ipynb 노트북은 [Azure OpenAI Assistants (preview)의 
 
 이 실습에서 사용된 서비스:
 
-- Azure OpenAI Service - you can apply for access [here](https://go.microsoft.com/fwlink/?linkid=2222006)
+- Azure OpenAI Service
 
 3. 프로그래밍 언어
 
