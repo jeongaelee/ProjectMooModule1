@@ -114,7 +114,7 @@ Embedding은 머신 러닝 학습 모델 및 알고리즘에서 쉽게 활용할
 
 18. Azure AI Foundry를 열어 Chat Playground를 선택합니다. "Add your data" 탭에서, "+Add a data source"를 클릭합니다.
 
-    <img src="images/embeddings18.png" width="600"/>
+    <img src="images/embeddings18-1.png" width="600"/>
 
 19. 데이터 소스에 "Azure AI Search"를 선택합니다. Azure AI Search Index에는 이전 단계에서 생성한 "wiki-index-01"을 선택합니다.
 
