@@ -2,28 +2,13 @@
 
 Azure OpenAI의 Batch API는 대규모 및 대용량 처리 작업을 효율적으로 처리하도록 설계 되었습니다. 별도의 할당량으로 비동기 요청 그룹을 처리하고 24시간 처리를 타겟으로, 글로벌보다 50% 더 저렴한 비용을 제공합니다. Batch API를 사용하면 한 번에 하나의 요청을 보내는 것이 아니라, 단일 파일에 많은 수의 요청을 보냅니다. Global Batch 배포 요청에는 별도의 토큰 Queue가 할당 되기 때문에 온라인 워크로드가 중단되지 않습니다.
 
-## Azure Potal에서 Global Batch 옵션으로 배포하고, Batch Job을 생성
-
-### Azure OpenAI 리소스 생성
-1. 아래와 같이 "azure openai"로 검색하여 Azure OpenAI 리소스를 생성합니다.
-
-    <img src="images/step04.png" width="300"/>
-
-2. 3번에서 생성한 리소스 그룹을 선택하고, 지역은 "West US"를 선택합니다. 가격 티어는 "Standard S0"을 선택한 후 "Next"를 누룹니다. Network 및 나머지 과정은 디폴트 값으로 선택 후 "Review + create"를 누릅니다.
-
-    <img src="images/step05.png" width="700"/>
-
-3. 리소스 배포가 완료되면 "Go to resource"를 클릭하여 Azure OpenAI로 이동합니다.
-
-4. "Go to Azure AI Foundry portal을"를 클릭하여 Azure AI Foundry portal을 오픈합니다.
-
-    <img src="https://github.com/jeongaelee/ProjectMooModule3/blob/main/images/1-04.png" width="500"/>
+## Azure Potal에서 모델을 Global Batch 옵션으로 배포하고, Batch Job을 생성
 
 ### Azure OpenAI에서 Global Batch Job 실행
 
 1. 먼저, Deployments 메뉴에서 새로운 Model Deployment를 실행합니다. "+Deploy model"을 클릭하고 "Deploy base model"을 선택합니다.
 
-    <img src="https://github.com/jeongaelee/ProjectMooModule3/blob/main/images/1-05.png" width="300"/>
+    <img src="images/batch01.png" width="300"/>
 
 2. 모델 선택 창에서 "gpt-4o" 모델을 선택하고 "Confirm" 버튼을 클릭합니다.
 
@@ -51,8 +36,9 @@ Azure OpenAI의 Batch API는 대규모 및 대용량 처리 작업을 효율적�
 
 ## 실습 순서
 
+* [Azure OpenAI Service 시작하기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/QuickStart.md)
 * [Global Batch API](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Batch.md)
+* [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
 * [Azure OpenAI Assistants Function Calling, File Search 사용해보기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
 * [RAG를 사용한 Python 채팅 샘플 애플리케이션](https://github.com/jeongaelee/ProjectMooModule1/blob/main/RAG.md)
-* [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
 * [Azure OpenAI On Your Data - Embeddings and Search](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-EmbeddingsAndSearch.md)
