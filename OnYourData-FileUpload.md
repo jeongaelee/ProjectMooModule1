@@ -4,16 +4,7 @@ Azure OpenAI의 On Your Data는 OpenAI 모델의 파워를 활용할 수 있으�
 
 ## 1. 자신의 데이터를 사용하여 Azure OpenAI 모델로 채팅해보기 (File Upload 옵션 사용)
 
-### Azure OpenAI 리소스 생성
-1. 아래와 같이 "azure openai"로 검색하여 Azure OpenAI 리소스를 생성합니다.
-
-    <img src="images/step04.png" width="300"/>
-
-2. 리소스 그룹을 선택하고, 지역은 "West US"를 선택합니다. 가격 티어는 "Standard S0"을 선택한 후 "Next"를 누룹니다. Network 및 나머지 과정은 디폴트 값으로 선택 후 "Review + create"를 누릅니다.
-
-    <img src="images/step05.png" width="700"/>
-   
-### Azure Storage Account와 Azure AI Search 리소스 생성
+### Azure 리소스 생성
 1. [Azure Portal](https://portal.azure.com/)으로 접속하여 Azure Storage Account를 생성합니다.
 
     <img src="images/onyourdata01.png" width="500"/>
@@ -34,43 +25,48 @@ Azure OpenAI의 On Your Data는 OpenAI 모델의 파워를 활용할 수 있으�
 
     <img src="images/onyourdata05.png" width="600"/>
 
-### Azure AI Foundry에서 On Your Data 구성
-1. Azure AI Foundry의 Chat 메뉴에서 "Add your data"를 선택한 후, "+ Add a data source"를 클릭합니다.
+6. Azure OpenAI Studio의 Home 화면으로 이동하여 "Bring your own data"를 선택합니다.
 
     <img src="images/onyourdata06.png" width="700"/>
 
-2. 이번 실습에서는 직접 파일을 업로드하여 업로드한 파일의 콘텐츠에서 채팅 응답이 생성되는지 확인해 보도록 하겠습니다. 데이터 소스를 "Upload files (preview)"를 선택하고, 위의 단계에서 생성한 Azure Blob Storage와 Azure AI Search 리소스를 선택합니다. Azure 구독의 storage account에 Azure OpenAI가 액세스 하기 위해서는 권한 부여가 필요하고, 이를 위해서 Cross-origin resource sharing (CORS)을 켜야합니다. 이 데이터 소스를 참조하는데 사용할 인덱스 이름을 입력합니다. 데이터 수집이 완료된 후 제공된 이름의 새 AI Search Index가 생성됩니다.
+7. Chat playground에서 "Add your data" 탭을 선택한 후, "+ Add a data source"를 클릭합니다.
+
+    <img src="images/onyourdata07.png" width="400"/>
+
+8. 이번 실습에서는 직접 파일을 업로드하여 업로드한 파일의 콘텐츠에서 채팅 응답이 생성되는지 확인해 보도록 하겠습니다. 데이터 소스를 "Upload files (preview)"를 선택하고, 위의 단계에서 생성한 Azure Blob Storage와 Azure AI Search 리소스를 선택합니다. Azure 구독의 storage account에 Azure OpenAI가 액세스 하기 위해서는 권한 부여가 필요하고, 이를 위해서 Cross-origin resource sharing (CORS)을 켜야합니다. 이 데이터 소스를 참조하는데 사용할 인덱스 이름을 입력합니다. 데이터 수집이 완료된 후 제공된 이름의 새 AI Search Index가 생성됩니다.
 
     <img src="images/onyourdata08.png" width="600"/>
 
-3. 업로드할 파일을 Drag and drop 한 후 "Upload files"를 클릭합니다. 본 실습에서는 [role_library.pdf](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData/role_library.pdf) 파일을 업로드 해보도록 하겠습니다.
+9. 업로드할 파일을 Drag and drop 한 후 "Upload files"를 클릭합니다. 본 실습에서는 "role_library.pdf" 파일을 업로드 해보도록 하겠습니다.
 
     <img src="images/onyourdata09.png" width="600"/>
 
-4. Search type을 "Semantic"으로 선택하고 디폴트 청킹 사이즈를 선택합니다.
+10. Search type을 "Semantic"으로 선택하고 디폴트 청킹 사이즈를 선택합니다.
 
     <img src="images/onyourdata10.png" width="600"/>
 
-5. Data connection을 위한 Azure 리소스의 인증 타입을 "API Key"로 선택합니다.
+11. Data connection을 위한 Azure 리소스의 인증 타입을 "API Key"로 선택합니다.
 
     <img src="images/onyourdata11.png" width="600"/>
 
-6. 설정을 리뷰한 후 "Save and close"를 클릭합니다.
+12. 설정을 리뷰한 후 "Save and close"를 클릭합니다.
 
     <img src="images/onyourdata12.png" width="600"/>
 
-7. Chat playground에서 "Ingestion in progress"가 표시되는 것을 보실 수 있습니다. 데이터 소스 (File Upload)에서 Azure AI Search로 indexing 되고 있는 과정입니다.
+13. Chat playground에서 "Ingestion in progress"가 표시되는 것을 보실 수 있습니다. 데이터 소스 (File Upload)에서 Azure AI Search로 indexing 되고 있는 과정입니다.
 
     <img src="images/onyourdata13.png" width="400"/>
 
-8. "Please summarize the role of vice president of operation in 3 bullets."이라는 프롬프트를 입력합니다. [role_library.pdf](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData/role_library.pdf) 파일의 내용에서 응답을 주는 것을 확인할 수 있습니다.
+14. "Please summarize the role of vice president of operation in 3 bullets."이라는 프롬프트를 입력합니다. role_library.pdf 파일의 내용에서 응답을 주는 것을 확인할 수 있습니다.
 
     <img src="images/onyourdata14.png" width="700"/>
 
 ## 실습 순서
 
+* [Azure OpenAI Service 시작하기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/QuickStart.md)
 * [Global Batch API](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Batch.md)
+* [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
+----
+* [Azure OpenAI On Your Data - Embeddings and Search](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-EmbeddingsAndSearch.md)
 * [Azure OpenAI Assistants Function Calling, File Search 사용해보기](https://github.com/jeongaelee/ProjectMooModule1/blob/main/Assistants.md)
 * [RAG를 사용한 Python 채팅 샘플 애플리케이션](https://github.com/jeongaelee/ProjectMooModule1/blob/main/RAG.md)
-* [Azure OpenAI On Your Data - File Upload](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-FileUpload.md)
-* [Azure OpenAI On Your Data - Embeddings and Search](https://github.com/jeongaelee/ProjectMooModule1/blob/main/OnYourData-EmbeddingsAndSearch.md)
