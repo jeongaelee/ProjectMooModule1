@@ -20,7 +20,7 @@ Azure OpenAI Service를 시작하기 위하여 Azure OpenAI 리소스를 생성�
 
 5. 모델을 배포합니다. "Deployments" 메뉴에서 "+ Deploy model"을 클릭하고 "Deploy base model"을 선택합니다.
 
-    <img src=https://github.com/jeongaelee/ProjectMooModule3/blob/main/images/1-05.png" width="400"/>
+    <img src="https://github.com/jeongaelee/ProjectMooModule3/blob/main/images/1-05.png" width="400"/>
 
 6. 본 실습에서는 gpt-4o 모델을 배포하도록 하겠습니다.
 
